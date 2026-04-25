@@ -42,14 +42,14 @@
         layer_0 {
             bindings = <
 &bootloader
-&kp GRAVE       &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5      &kp PRINTSCREEN      &none            &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0     &kp K_APPLICATION
-&kp TAB         &kp Q            &kp W         &kp E           &kp R             &kp T             &kp CAPSLOCK         &kp C_MUTE       &kp Y         &kp U           &kp I            &kp O          &kp P            &kp BACKSLASH
-&kp ESCAPE      &kp A            &kp S         &kp D           &mt LEFT_SHIFT F  &kp G                                                   &kp H         &kp J           &kp K            &kp L          &kp SEMICOLON    &kp BACKSPACE
-&mo LAYER_SYMB  &kp Z            &kp X         &kp C           &kp V             &kp B             &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp N         &kp M           &kp COMMA        &kp PERIOD     &kp SLASH        &mo LAYER_SYMB
-&none           &mo LAYER_MOUSE  &kp LEFT_ALT  &kp LEFT_ARROW  &kp UP_ARROW                                                                            &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ALT  &mo LAYER_MOUSE  &to LAYER_NMPAD
-                                                                                 &kp DELETE        &kp HOME             &kp END          &kp INSERT
-                                                               &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp PAGE_UP          &kp PAGE_DOWN    &kp SPACE     &kp LEFT_GUI
-                                                                                                   &kp RETURN           &mo LAYER_FN
+&kp GRAVE       &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4      &kp NUMBER_5      &kp PRINTSCREEN      &none            &kp NUMBER_6  &kp NUMBER_7       &kp NUMBER_8     &kp NUMBER_9    &kp NUMBER_0         &kp K_APPLICATION
+&kp TAB         &kp Q            &kp W           &kp E           &kp R             &kp T             &kp CAPSLOCK         &kp C_MUTE       &kp Y         &kp U              &kp I            &kp O           &kp P                &kp BACKSLASH
+&kp ESCAPE      &mt LMETA A      &mt LEFT_ALT S  &mt LCTRL D     &mt LEFT_SHIFT F  &kp G                                                   &kp H         &mt RIGHT_SHIFT J  &mt LCTRL K      &mt LEFT_ALT L  &mt RMETA SEMICOLON  &kp BACKSPACE
+&mo LAYER_SYMB  &kp Z            &kp X           &kp C           &kp V             &kp B             &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp N         &kp M              &kp COMMA        &kp PERIOD      &kp SLASH            &mo LAYER_SYMB
+&none           &mo LAYER_MOUSE  &kp LEFT_ALT    &kp LEFT_ARROW  &kp UP_ARROW                                                                            &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp RIGHT_ALT   &mo LAYER_MOUSE      &to LAYER_NMPAD
+                                                                                   &kp DELETE        &kp HOME             &kp END          &kp INSERT
+                                                                 &kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp PAGE_UP          &kp PAGE_DOWN    &kp SPACE     &kp LEFT_GUI
+                                                                                                     &kp RETURN           &mo LAYER_FN
             >;
         };
 
