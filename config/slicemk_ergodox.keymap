@@ -43,7 +43,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <200>;
         };
     };
@@ -60,7 +60,7 @@
 &mo LAYER_SYMB  &kp Z                       &kp X                          &kp C                       &kp V                            &kp B             &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp N         &kp M                             &kp COMMA                   &kp PERIOD                     &kp SLASH                           &mo LAYER_SYMB
 &none           &mo LAYER_MOUSE             &kp LEFT_ALT                   &kp LEFT_ARROW              &kp UP_ARROW                                                                                           &kp DOWN_ARROW                    &kp RIGHT_ARROW             &kp RIGHT_ALT                  &mo LAYER_MOUSE                     &to LAYER_NMPAD
                                                                                                                                         &kp DELETE        &kp HOME             &kp END          &kp INSERT
-                                                                                                       &kp LEFT_SHIFT                   &kp LEFT_CONTROL  &kp PAGE_UP          &kp PAGE_DOWN    &kp SPACE     &kp LEFT_GUI
+                                                                                                       &kp SPACE                        &kp LEFT_CONTROL  &kp PAGE_UP          &kp PAGE_DOWN    &kp SPACE     &kp LEFT_GUI
                                                                                                                                                           &kp RETURN           &mo LAYER_FN
             >;
         };
