@@ -46,6 +46,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             hold-while-undecided-linger;
+            quick-tap-ms = <200>;
         };
 
         symbol_layer: symbol_layer {
@@ -67,7 +68,7 @@
 &mo LAYER_SYMB  &kp Z                      &kp X                         &kp C                      &kp V                           &kp B         &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp N         &kp M                            &kp COMMA                  &kp PERIOD                    &kp SLASH                          &mo LAYER_SYMB
 &none           &mo LAYER_MOUSE            &kp LEFT_ALT                  &kp LEFT_ARROW             &kp UP_ARROW                                                                                      &kp DOWN_ARROW                   &kp RIGHT_ARROW            &kp RIGHT_ALT                 &mo LAYER_MOUSE                    &to LAYER_NMPAD
                                                                                                                                     &kp DELETE    &kp HOME             &kp END          &kp INSERT
-                                                                                                    &lt 2 SPACE                     &kp TAB       &kp PAGE_UP          &kp PAGE_DOWN    &kp ENTER     &lt 2 LA(BACKSPACE)
+                                                                                                    &lt 2 SPACE                     &kp TAB       &kp PAGE_UP          &kp PAGE_DOWN    &kp ENTER     &lt 2 BACKSPACE
                                                                                                                                                   &kp RETURN           &mo LAYER_FN
             >;
         };
