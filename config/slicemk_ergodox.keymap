@@ -34,6 +34,16 @@
             bindings = <&kp BSPC>;
             key-positions = <38 37>;
         };
+
+        swap_to_mac {
+            bindings = <&tog 7>;
+            key-positions = <42 43 44 45>;
+        };
+
+        swap_to_base {
+            bindings = <&tog 0>;
+            key-positions = <50 51 52 53>;
+        };
     };
 
     behaviors {
@@ -67,7 +77,7 @@
         base {
             bindings = <
 &bootloader
-&none             &kp NUMBER_1               &kp NUMBER_2                  &kp NUMBER_3               &kp NUMBER_4                    &kp N5            &none                   &none              &none                &none                            &none                      &none                         &none                              &none
+&none             &none                      &none                         &none                      &none                           &none             &none                   &none              &none                &none                            &none                      &none                         &none                              &none
 &kp CAPSLOCK      &kp Q                      &kp W                         &kp E                      &kp R                           &kp T             &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &kp Y                &kp U                            &kp I                      &kp O                         &kp P                              &none
 &kp LEFT_CONTROL  &balanced_mod_tap LMETA A  &balanced_mod_tap LEFT_ALT S  &balanced_mod_tap LCTRL D  &balanced_mod_tap LEFT_SHIFT F  &tap_layer 3 G                                               &tap_layer 1 H       &balanced_mod_tap RIGHT_SHIFT J  &balanced_mod_tap LCTRL K  &balanced_mod_tap LEFT_ALT L  &balanced_mod_tap RMETA SEMICOLON  &kp BACKSPACE
 &tog 6            &kp Z                      &kp X                         &kp C                      &kp V                           &kp B             &kp C_BRIGHTNESS_DEC    &kp C_VOLUME_DOWN  &kp N                &kp M                            &kp COMMA                  &kp PERIOD                    &kp SLASH                          &tog 6
@@ -151,14 +161,28 @@
         media {
             bindings = <
 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&tog 0  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &tog 0
-&trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans
-                                        &trans  &trans    &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
-                                                &trans    &trans
+&trans  &trans  &trans      &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&tog 0  &trans  &trans      &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &tog 0
+&trans  &trans  &trans      &trans            &trans                                        &trans  &trans  &trans  &trans  &trans
+                                                          &trans  &trans    &trans  &trans
+                                              &trans      &trans  &trans    &trans  &trans  &trans
+                                                                  &trans    &trans
+            >;
+        };
+
+        mac_base {
+            bindings = <
+&bootloader
+&none             &kp NUMBER_1                      &kp NUMBER_2                  &kp NUMBER_3                   &kp NUMBER_4                    &kp N5            &none                   &none              &none                &none                            &none                              &none                         &none                                     &none
+&kp CAPSLOCK      &kp Q                             &kp W                         &kp E                          &kp R                           &kp T             &kp C_BRIGHTNESS_INC    &kp C_VOLUME_UP    &kp Y                &kp U                            &kp I                              &kp O                         &kp P                                     &none
+&kp LEFT_CONTROL  &balanced_mod_tap LEFT_CONTROL A  &balanced_mod_tap LEFT_ALT S  &balanced_mod_tap LEFT_META D  &balanced_mod_tap LEFT_SHIFT F  &tap_layer 3 G                                               &tap_layer 1 H       &balanced_mod_tap RIGHT_SHIFT J  &balanced_mod_tap RIGHT_COMMAND K  &balanced_mod_tap LEFT_ALT L  &balanced_mod_tap LEFT_CONTROL SEMICOLON  &kp BACKSPACE
+&tog 6            &kp Z                             &kp X                         &kp C                          &kp V                           &kp B             &kp C_BRIGHTNESS_DEC    &kp C_VOLUME_DOWN  &kp N                &kp M                            &kp COMMA                          &kp PERIOD                    &kp SLASH                                 &tog 6
+&none             &none                             &none                         &kp LEFT_ARROW                 &kp RIGHT                                                                                                         &kp UP_ARROW                     &kp DOWN                           &none                         &none                                     &none
+                                                                                                                                                 &none             &none                   &none              &kp INSERT
+                                                                                                                 &tap_layer 2 SPACE              &tap_layer 5 TAB  &kp PAGE_UP             &kp PAGE_DOWN      &tap_layer 4 RETURN  &tap_layer 2 BACKSPACE
+                                                                                                                                                                   &kp RETURN              &mo 1
             >;
         };
     };
