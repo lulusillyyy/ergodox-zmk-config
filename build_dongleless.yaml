@@ -1,0 +1,3 @@
+include:
+  - board: slicemk_ergodox_202207_green_left
+    shield: slicemk_ergodox_leftcentral
