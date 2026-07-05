@@ -146,13 +146,13 @@
         vim_nav {
             bindings = <
 &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans        &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans                                      &trans    &trans        &trans     &trans  &trans
-                                        &trans  &trans    &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp END   &trans    &trans    &trans        &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                        &trans    &trans        &trans     &trans  &trans
+                                        &trans  &trans    &trans    &trans
+                                &trans  &trans  &trans    &trans    &trans    &trans
                                                 &trans    &trans
             >;
         };
