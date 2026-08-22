@@ -82,7 +82,7 @@
 &none        &kp C_AC_UNDO              &kp C_AC_CUT                  &kp C_AC_COPY              &kp C_AC_PASTE                                                                                                                            &kp LEFT                         &kp DOWN                   &kp UP_ARROW                  &kp RIGHT                          &none
                                                                                                                                  &none                     &none                         &none                       &none
                                                                                                  &tap_layer 2 SPACE              &tap_layer 5 LC(LS(TAB))  &sl 1                         &sl 1                       &tap_layer 4 LC(TAB)  &tap_layer 2 BACKSPACE
-                                                                                                                                                           &kp PAGE_DOWN                 &to 4
+                                                                                                                                                           &kp K_LOCK                    &to 4
             >;
         };
 
